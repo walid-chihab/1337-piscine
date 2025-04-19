@@ -30,7 +30,7 @@ void    ft_print_comb (void )
                 write( 1, &c1, 1);
                 write( 1, &c2, 1);
                 write( 1, &c3, 1);
-                if (i != 7 || j != 8 || k != 9)
+                if (i != 7 || j != 8 || k != 9) // meme si if apresles writs sa marche car les valeu pass directement dapres for par contre while
                     write(1,", ",2);
             }
         }
