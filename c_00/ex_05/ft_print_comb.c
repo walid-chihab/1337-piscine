@@ -9,7 +9,7 @@
 /*					         ###    w#a#l#i#d.ma    */
 /*					                                */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-#include <unistd.>
+#include <unistd.h>
 
 
 void    ft_print_comb (void )
@@ -24,14 +24,11 @@ void    ft_print_comb (void )
         {
             k=j+1;
             while( k<58)
-            {
-                if (i != 7 || j != 8 || k != 9)
-                    write(1,", ",2);
-                
+            {   
                 write( 1, &i, 1);
                 write( 1, &j, 1);
                 write( 1, &k, 1);
-               if (i != 7 || j != 8 || k != 9)
+               if (i != 55 || j != 56 || k != 57)
                     write(1,", ",2);
                 k++;
 
