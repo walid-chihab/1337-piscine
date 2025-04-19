@@ -9,14 +9,7 @@
 /*					         ###    w#a#l#i#d.ma    */
 /*					                                */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
-
 #include <unistd.h>
-
-
-
-#include <unistd.h>
-
 
 void    ft_print_comb (void )
 {
