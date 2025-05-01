@@ -9,10 +9,11 @@
 /*					         ###    w#a#l#i#d.ma    */
 /*					                                */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
 #include <unistd.h>
 
 
-void    ft_print_comb (void )
+void    ft_print_comb0 (void )
 {
     int  i,j,k;
     
@@ -39,7 +40,9 @@ void    ft_print_comb (void )
     }
 }
 
-void    ft_print_comb_2 (void )
+
+/*********************************************************************************************************/
+void    ft_print_comb_1 (void )
 {
     int  i,j,k;
 
@@ -63,4 +66,48 @@ void    ft_print_comb_2 (void )
             }
         }
     }
+}
+
+/*********************************************************************************************************/
+
+ void ft_putchar (char  c){
+
+     write (1,&c,1);
+ }
+
+void ft_print_comb2(void) {
+    int  a,b,c ;
+
+    a = 0;
+    while(a <= 7){
+
+        b = a + 1;
+        while (b <= 8){
+
+            c = b + 1;
+            while( c <= 9){
+
+                char _a = a + '0';
+                char _b = b + '0';
+                char _c = c + '0';
+
+                ft_putchar(_a);
+                ft_putchar(_b);
+                ft_putchar(_c);
+
+                if (a != 7)
+                    write(1 ,", ",2);
+
+                c++;
+            }
+            b++;
+        }
+        a++;
+    }
+}
+
+int main ()
+{
+	ft_print_comb3();//preferant la 3 emme
+	return 0;
 }
