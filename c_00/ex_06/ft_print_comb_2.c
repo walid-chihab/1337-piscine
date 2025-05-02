@@ -2,30 +2,34 @@
 
 void ft_print_comb_2 (void)
 {
-    int i= 0 ,j;
-    while (i<99)
+    int x,y;
+
+    x = 0;
+    while (x <= 98)
+    
     {
-            j=i+1;
-
-        while (j<100)
+	y = x + 1;
+        while (y <= 99)
         {
-            int div_i=i/10 +'0';
-            int res_i= i%10+'0';
-            write (1 ,&div_i, 1);
-            write (1 ,&res_i, 1);
-            
-            write (1," ",1);
+		int xd = x / 10 + '0';
+		int xm = x % 10 + '0';
+		int yd = y / 10 + '0';
+                int ym = y % 10 + '0';
 
-            int div_j=j/10+'0';
-            int res_j= j%10+'0';
-            write (1 ,&div_j, 1);
-            write (1 ,&res_j, 1);
+		write (1 ,&xd, 1);
+		write (1 ,&xm, 1);
+
+		write (1," ",1);//un espace entre les deux comb
+
+		write (1 ,&yd, 1);
+		write (1 ,&ym, 1);
            
-           if(!(i == 98 && j == 99))
-                write(1,", ",2);
-            j++;
+		if(!(x == 98 && y == 99))//deux conditioin pour bien controler le programme
+			write(1,", ",2);//vergule espace entre chaque deux chiffre de deux comb
+
+		y++;
         }
-        i++;
+        x++;
     }
 }
 int main (){
