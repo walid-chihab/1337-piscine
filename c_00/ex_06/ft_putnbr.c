@@ -22,9 +22,9 @@ void ft_putnbr (int nbr)
     {
         ft_putnbr(nbr/10);
     }
-    ft_putchar (nbr%10+'0');
+    ft_putchar(nbr%10+'0');
 }
 
 int main (){
-    ft_putnbr(-2147483648);
+    ft_putnbr(-2147483648);//il faut affich -2147483648 d'apres la premier condition du deuxiemme fct avec l'affichage par premier fct
 }
